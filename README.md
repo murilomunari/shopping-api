@@ -1,1 +1,1 @@
-projeto ultilizando arquitetura de microsserviços com docker e kubernetes com spring boot
+projeto ultilizando arquitetura de microsserviços com API Gateway, docker e kubernetes com spring boot
