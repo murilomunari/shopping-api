@@ -5,6 +5,7 @@ import com.shopping.Entity.User;
 import com.shopping.Service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -41,6 +42,15 @@ public class UserController {
     public ResponseEntity<Void> deleteById(@PathVariable Long id){
         userService.deleteById(id);
         return  ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+    }
+
+    @GetMapping("/paginated")
+    public ResponseEntity<Page<User>> getUsersPaginated(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+
+        Page<User> users = userService.findAllPaginated(page, size);
+        return ResponseEntity.ok(users);
     }
 
 }
