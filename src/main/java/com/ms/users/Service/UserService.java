@@ -1,8 +1,8 @@
-package com.shopping.Service;
+package com.ms.users.Service;
 
-import com.shopping.DTO.UserDTO;
-import com.shopping.Entity.User;
-import com.shopping.Repsitory.UserRepository;
+import com.ms.users.Repsitory.UserRepository;
+import com.ms.users.DTO.UserDTO;
+import com.ms.users.Entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

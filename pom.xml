@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shopping</groupId>
-	<artifactId>shopping</artifactId>
+	<artifactId>ms-users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>shopping</name>
 	<description>Demo project for Spring Boot</description>

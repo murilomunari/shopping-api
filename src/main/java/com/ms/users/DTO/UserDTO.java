@@ -1,4 +1,4 @@
-package com.shopping.DTO;
+package com.ms.users.DTO;
 
 
 import java.time.LocalDateTime;

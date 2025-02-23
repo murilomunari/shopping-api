@@ -1,10 +1,10 @@
-package com.shopping;
+package com.ms.users;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShoppingApplicationTests {
+class UsersApplicationTests {
 
 	@Test
 	void contextLoads() {
